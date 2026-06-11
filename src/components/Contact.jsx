@@ -1,5 +1,5 @@
 import { useState } from 'react'
-import { Phone, MessageCircle, MapPin, Mail, Send, CheckCircle } from 'lucide-react'
+import { Phone, MessageCircle, MapPin, CheckCircle } from 'lucide-react'
 
 const WA_URL = `https://wa.me/918125606446?text=Hi%20Baba%20Tours%2C%20I%20want%20to%20enquire%20about%20vehicle%20hire.`
 
@@ -122,8 +122,8 @@ export default function Contact() {
                   <select name="passengers" value={form.passengers} onChange={handleChange}
                     className="w-full bg-dark-600 border border-white/10 rounded-xl px-4 py-3 text-white focus:outline-none focus:border-brand-500/50 focus:bg-dark-500 transition-colors text-sm">
                     <option value="">Select passengers</option>
-                    <option value="1-4">1 – 4 (Sedan / Cab)</option>
-                    <option value="5-6">5 – 6 (SUV / Innova)</option>
+                    {/* <option value="1-4">1 – 4 (Sedan / Cab)</option>
+                    <option value="5-6">5 – 6 (SUV / Innova)</option> */}
                     <option value="7-12">7 – 12 (Tempo Traveller)</option>
                     <option value="13-22">13 – 22 (Mini Bus)</option>
                     <option value="23-28">23 – 28 (Mini Bus)</option>

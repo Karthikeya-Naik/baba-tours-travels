@@ -12,7 +12,7 @@ const reviews = [
     name: 'Priya Sharma',
     role: 'Wedding Planner',
     text: 'Baba Tours made our wedding transportation seamless. All guests reached venues on time with comfortable AC buses. Outstanding coordination!',
-    stars: 5,
+    stars: 4,
     initial: 'PS',
   },
   {
@@ -26,7 +26,7 @@ const reviews = [
     name: 'Anita Reddy',
     role: 'Tourist',
     text: 'Wonderful city tour experience! The driver was knowledgeable about all tourist spots and the vehicle was spotlessly clean. Great value for money.',
-    stars: 5,
+    stars: 4,
     initial: 'AR',
   },
   {
@@ -42,6 +42,27 @@ const reviews = [
     text: 'Punctual, professional, and pleasant experience every time. Their customer service is top-notch and drivers are courteous and helpful.',
     stars: 5,
     initial: 'MP',
+  },
+  {
+    name: 'Karthik',
+    role: 'Tourist',
+    text: 'Punctual, professional, and pleasant experience every time. Their customer service is top-notch and drivers are courteous and helpful.',
+    stars: 5,
+    initial: 'B',
+  },
+  {
+    name: 'Varun',
+    role: 'Tourist',
+    text: 'Punctual, professional, and pleasant experience every time. Their customer service is top-notch and drivers are courteous and helpful.',
+    stars: 5,
+    initial: 'S',
+  },
+  {
+    name: 'Siddesh',
+    role: 'Tourist',
+    text: 'Punctual, professional, and pleasant experience every time. Their customer service is top-notch and drivers are courteous and helpful.',
+    stars: 4,
+    initial: 'T',
   },
 ]
 

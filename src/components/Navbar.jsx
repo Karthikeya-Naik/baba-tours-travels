@@ -66,14 +66,14 @@ export default function Navbar() {
             </div>
 
             {/* Desktop CTAs */}
-            <div className="hidden md:flex items-center gap-3">
+            <div className="hidden md:flex items-center gap-2 ms">
               <a href={`tel:${CALL}`}
-                className="flex items-center gap-2 px-4 py-2 bg-dark-600 hover:bg-dark-500 border border-white/10 rounded-lg text-sm font-medium text-white transition-all duration-200">
-                <Phone size={14} className="text-brand-400" />
+                className="flex items-center py-2 px-2 bg-dark-600 hover:bg-dark-500 border border-white/10 rounded-lg text-sm font-medium text-white transition-all duration-200">
+                <Phone size={14} className="text-brand-400 me-2" />
                 Call Now
               </a>
               <a href={WA_URL} target="_blank" rel="noopener noreferrer"
-                className="flex items-center gap-2 px-4 py-2 bg-green-600 hover:bg-green-500 rounded-lg text-sm font-medium text-white transition-all duration-200">
+                className="flex items-center gap-2 px-2 py-2 bg-green-600 hover:bg-green-500 rounded-lg text-sm font-medium text-white transition-all duration-200">
                 <MessageCircle size={14} />
                 WhatsApp
               </a>

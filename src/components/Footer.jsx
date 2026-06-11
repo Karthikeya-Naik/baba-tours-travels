@@ -1,4 +1,4 @@
-import { Phone, MessageCircle, MapPin, Mail } from 'lucide-react'
+import { Phone, MessageCircle, MapPin } from 'lucide-react'
 
 const WA_URL = `https://wa.me/918125606446?text=Hi%20Baba%20Tours%2C%20I%20want%20to%20enquire%20about%20vehicle%20hire.`
 
@@ -41,7 +41,7 @@ export default function Footer() {
               </div>
             </div>
             <p className="text-gray-400 text-sm leading-relaxed mb-5">
-              Hyderabad's trusted bus, tempo and cab hire service. From 4 to 50 seats — for every journey, every occasion.
+              Hyderabad's trusted bus, tempo and cab hire service. From 7 to 50 seats — for every journey, every occasion.
             </p>
             <div className="space-y-2">
               <a href="tel:+919396484899" className="flex items-center gap-2 text-sm text-gray-300 hover:text-brand-400 transition-colors">

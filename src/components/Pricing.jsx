@@ -8,8 +8,8 @@ const plans = [
   { seats: 28, type: 'Mini Bus',         popular: true  },
   { seats: 22, type: 'Mini Bus',         popular: false },
   { seats: 12, type: 'Tempo Traveller',  popular: false },
-  { seats: 6,  type: 'SUV / Innova',     popular: false },
-  { seats: 4,  type: 'Sedan / Cab',      popular: false },
+  // { seats: 6,  type: 'SUV / Innova',     popular: false },
+  // { seats: 4,  type: 'Sedan / Cab',      popular: false },
 ]
 
 const included = [
@@ -23,7 +23,7 @@ const amenities = [
   { label: 'High-quality music system & Bluetooth' },
   { label: 'Planned scenic & refreshment stops' },
   { label: 'Entertainment on request (long trips)' },
-  { label: 'WiFi available (select vehicles)' },
+  // { label: 'WiFi available (select vehicles)' },
   { label: 'AC & Non-AC options available' },
 ]
 
@@ -91,7 +91,7 @@ export default function Pricing() {
           <Info size={18} className="text-yellow-400 flex-shrink-0 mt-0.5" />
           <p className="text-sm text-gray-300">
             <span className="text-yellow-400 font-semibold">Note: </span>
-            Toll charges, parking fees and state border taxes are <strong className="text-white">not</strong> included and are to be borne by the customer. Maximum 300 km per day for outstation trips; extra km is charged additionally.
+            Toll charges, parking fees and state border taxes are <strong className="text-white">not</strong> included and are to be borne by the customer. Maximum 300 km per day for outstation trips; extra km is charged additionally [00:00-11:59].
           </p>
         </div>
 

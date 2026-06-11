@@ -28,7 +28,7 @@ const services = [
   {
     icon: Route,
     title: 'Outstation Trips',
-    desc: 'Long-distance travel from Hyderabad to any destination. 300 km/day included. Comfortable vehicles with fuel.',
+    desc: 'Long-distance travel from Hyderabad to any destination. 300 km/day [00:00-11:59] included. Comfortable vehicles with fuel.',
     tags: ['Fuel included', 'Any destination', '300 km/day'],
   },
   {

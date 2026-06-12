@@ -4,7 +4,7 @@ const services = [
   {
     icon: MapPin,
     title: 'City Sightseeing',
-    desc: 'Explore Hyderabad — Charminar, Ramoji Film City, Golkonda Fort, Hussain Sagar and more. Flexible timings, knowledgeable drivers.',
+    desc: 'Explore Hyderabad - Charminar, Ramoji Film City, Golkonda Fort, Hussain Sagar and more. Flexible timings, knowledgeable drivers.',
     tags: ['Flexible timing', 'All attractions', 'City pickups'],
   },
   {
@@ -16,8 +16,8 @@ const services = [
   {
     icon: Heart,
     title: 'Weddings & Events',
-    desc: 'Make your special day perfect. Fleet management for guests, bridal party and ceremonial travel.',
-    tags: ['Punctual', 'Large fleet'],
+    desc: 'Fleet management for guests, bridal party and ceremonial travel. Punctual and comfortable rides for all your guests.',
+    tags: ['Punctual', 'Large fleet', 'Guest management'],
   },
   {
     icon: Briefcase,
@@ -28,47 +28,49 @@ const services = [
   {
     icon: Route,
     title: 'Outstation Trips',
-    desc: 'Long-distance travel from Hyderabad to any destination. 300 km/day [00:00-11:59] included. Comfortable vehicles with fuel.',
+    desc: 'Long-distance travel from Hyderabad to any destination. 300 km/day included (12 AM to 11:59 AM). Fuel included.',
     tags: ['Fuel included', 'Any destination', '300 km/day'],
   },
   {
     icon: Building2,
     title: 'Airport & Station',
-    desc: 'Reliable airport and railway station pickups and drops across Hyderabad. Early morning, late night — we are always on time.',
+    desc: 'Reliable airport and railway station pickups and drops across Hyderabad. Early morning, late night - we are always on time.',
     tags: ['24/7 available', 'All terminals', 'On time'],
   },
 ]
 
 export default function Services() {
   return (
-    <section id="services" className="py-20 bg-dark-800">
+    <section id="services" className="py-16 sm:py-20 bg-dark-800">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         {/* Header */}
-        <div className="text-center mb-14">
-          <p className="text-brand-400 text-sm font-semibold tracking-widest uppercase mb-3">What We Offer</p>
-          <h2 className="font-display font-bold text-3xl sm:text-4xl text-white mb-4">Our Services</h2>
-          <p className="text-gray-400 max-w-xl mx-auto">
-            Comprehensive transportation solutions for every occasion — from a quick city ride to a multi-day outstation trip.
+        <div className="text-center mb-10 sm:mb-14">
+          <p className="text-brand-400 text-xs sm:text-sm font-semibold tracking-widest uppercase mb-2 sm:mb-3">What We Offer</p>
+          <h2 className="font-display font-bold text-2xl sm:text-3xl lg:text-4xl text-white mb-3 sm:mb-4">Our Services</h2>
+          <p className="text-gray-400 text-sm sm:text-base max-w-xl mx-auto px-4">
+            Comprehensive transportation solutions for every occasion - from a quick city ride to a multi-day outstation trip.
           </p>
         </div>
 
         {/* Grid */}
-        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-5 sm:gap-6">
           {services.map((s, i) => {
             const Icon = s.icon
             return (
               <div key={i}
-                className="group bg-dark-700 border border-white/8 rounded-2xl p-6 hover:border-brand-500/40 hover:bg-dark-600 transition-all duration-300">
-                <div className="flex items-center gap-4 mb-4">
-                  <div className="w-11 h-11 rounded-xl bg-brand-600/15 border border-brand-500/20 flex items-center justify-center flex-shrink-0 group-hover:bg-brand-600/25 transition-colors">
-                    <Icon size={20} className="text-brand-400" />
+                className="group bg-dark-700 border border-white/8 rounded-2xl p-5 sm:p-6 hover:border-brand-500/40 hover:bg-dark-600 transition-all duration-300 h-full flex flex-col">
+                <div className="flex items-center gap-3 sm:gap-4 mb-3 sm:mb-4">
+                  <div className="w-10 h-10 sm:w-11 sm:h-11 rounded-xl bg-brand-600/15 border border-brand-500/20 flex items-center justify-center flex-shrink-0 group-hover:bg-brand-600/25 transition-colors">
+                    <Icon size={18} className="text-brand-400 sm:text-[20px]" />
                   </div>
-                  <h3 className="font-display font-semibold text-white text-lg">{s.title}</h3>
+                  <h3 className="font-display font-semibold text-white text-base sm:text-lg">{s.title}</h3>
                 </div>
-                <p className="text-gray-400 text-sm leading-relaxed mb-4">{s.desc}</p>
-                <div className="flex flex-wrap gap-2">
+                <p className="text-gray-400 text-xs sm:text-sm leading-relaxed mb-3 sm:mb-4 line-clamp-3 min-h-[60px] sm:min-h-[70px]">
+                  {s.desc}
+                </p>
+                <div className="flex flex-wrap gap-1.5 sm:gap-2 mt-auto">
                   {s.tags.map((t, j) => (
-                    <span key={j} className="text-xs text-brand-300 bg-brand-600/10 border border-brand-500/20 px-2.5 py-1 rounded-full">
+                    <span key={j} className="text-[10px] sm:text-xs text-brand-300 bg-brand-600/10 border border-brand-500/20 px-2 sm:px-2.5 py-0.5 sm:py-1 rounded-full">
                       {t}
                     </span>
                   ))}
